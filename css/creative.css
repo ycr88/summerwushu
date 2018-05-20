@@ -46,18 +46,12 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.bg-primary {
-  background-color: #F05F40;
-}
-.bg-dark {
-  background-color: #222222;
-  color: white;
-}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
+  padding: 2em 0;
 }
 aside {
   padding: 50px 0;
@@ -507,7 +501,7 @@ h2:after{
   text-decoration: none;
 }
 
-/*Work Outs*/
+/*Programs*/
 .program {
 	background-color: #f0f0aa;
 	padding: 40px 0px;
@@ -542,25 +536,25 @@ h2:after{
 }
 
 /*TEAM*/
-.coaches{
+.about{
   padding: 35px 0px;
 }
-.coaches h2{
+.about h2{
   color: #fff;
   margin-bottom: 44px;
 }
-.coaches h2:after{
+.about h2:after{
   background-color: #fff;
 }
-.coaches .owl-prev {
+.about .owl-prev {
   background: url(../img/arrow_left.png) no-repeat 0 0px;
   left: -42px;
 }
-.coaches .owl-next {
+.about .owl-next {
   background: url(../img/arrow_right.png) no-repeat 0 0px;
   right: -56px;
 }
-.coaches .owl-next, .coaches .owl-prev{
+.about .owl-next, .about .owl-prev{
   text-indent: -9999px;
   padding: 5px 14px;
   opacity: 1;
@@ -572,30 +566,29 @@ h2:after{
   width: 100%;
   top: 50%;
 }
-.coaches .slider1 a{
+.about .slider1 a{
   position: relative;
   display: block;
-  width: 100%;
+ 
 }
-.coaches .slider1 a img{
+.about .slider1 a img{
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
-.coaches .slider1 a:hover img {
+.about .slider1 a:hover img {
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
 }
-.coaches .slider1 a:hover p{
+.about .slider1 a:hover p{
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-.coaches .slider1 p{
-  position: absolute;
+.about .slider1 p{
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -603,28 +596,17 @@ h2:after{
   transition: all 1s ease;
   font-size: 26px;
   color: #fff;
-  z-index: 1;
   font-family: 'proxima_nova_ththin';
-  width: 100%;
-  text-align: center;
-  display: block;
-  top: 44%;
   text-shadow: 1px 1px 3px #222;
 }
-.coaches .slider1 span{
-  position: absolute;
+.about .slider1 span{
   color: #ffff00;
-  z-index: 1;
   font-family: 'proxima_nova_ththin';
-  width: 100%;
-  text-align: center;
-  display: block;
   font-size: 24px;
   text-transform: uppercase;
-  top: 61%;
   text-shadow: 1px 1px 3px #717171;
 }
-.coaches a.btn{
+.about a.btn{
   font-size: 12px;
   text-transform: uppercase;
   padding: 10px 30px;
@@ -632,19 +614,25 @@ h2:after{
   border-color: #837f7f;
   color: #837f7f;
 }
-.coaches a.btn:hover{
+.about a.btn:hover{
   border-color: #ffff00;
   color: #ffff00;
   background-color: transparent;
 }
-.coaches .buttons{
+.about .buttons{
   margin-top: 23px;
 }
-
+.about .about-image-text{
+  position: absolute;
+    top: 60%;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
 
 /*SCHEDULE*/
 .schedule{
-  background-color: #151515;
+  background-color: #fe1f62;
   padding: 35px 0px;
 }
 .schedule h2{
@@ -656,11 +644,11 @@ h2:after{
   margin-top: 40px;
 }
 .schedule .btn{
-  font-size: 12px;
-  border-color: #837f7f;
-  color: #837f7f;
-  margin: 0px 6px;
-  padding: 10px 18px;
+font-size: 12px;
+    border-color: #009ea1;
+    color: #f0f0aa;
+    margin: 0px 6px;
+    padding: 10px 18px;
 }
 .schedule .btn:hover{
   border-color: #ffff00;
@@ -890,31 +878,28 @@ h2:after{
   background-color: #fff;
   padding-top: 35px;
 }
-.page.coaches section{
-  padding: 35px 0px;
-}
-.page.coaches section h2{
+.page.about section h2{
   margin-bottom: 27px;
 }
-.page.coaches .buttons{
+.page.about .buttons{
   margin-bottom: 20px;
 }
-.page.coaches .about_coach h1{
+.page.about .about_coach h1{
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 110px;
 }
-.page.coaches .about_coach p{
+.page.about .about_coach p{
   font-size: 16px;
   color: #000;
   margin: 10px 0px;
 }
-.page.coaches .about_coach p b{
+.page.about .about_coach p b{
   font-family: 'ProximaNova-SemiBold';
 }
-.page.coaches .bottom_links{
+.page.about .bottom_links{
   padding-top: 7px;
 }
 
@@ -952,8 +937,6 @@ h2:after{
   color: #000;
   margin: 0px 20px;
 }
-
-
 /*schedule*/
 .page.page_schedule{
   background-image: none;
@@ -991,6 +974,29 @@ h2:after{
   margin-bottom: 10px;
   margin-top: 5px;
 }
+/*pricing*/
+.pricing{
+  background-color: #009ea1;
+}
+.pricing h2{
+  margin-bottom: 1.5em;
+}
+.pricing .discount{
+  position: relative;
+  padding: 1em;
+}
+ .pricing .discount .image-discount{
+    max-width: 10%;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+ }
+.pricing .discount .image-discount img{
+  width: 100%;
+}
+
+
+
 /*contact*/
 .contact_page{
   background:none;
@@ -1041,7 +1047,7 @@ h2:after{
   margin: 0 auto;
   top: inherit;
   }
-  .coaches .buttons{
+  .about .buttons{
     margin-top: 45px;
   }
 }
@@ -1078,12 +1084,12 @@ h2:after{
   .bottom_links ul{
     padding-left: 20px;
   }
-  .page.coaches .about_coach h1{
+  .page.about .about_coach h1{
     color: #000;
   }
 }
 @media (max-width: 500px){
-  .coaches .buttons a{
+  .about .buttons a{
     margin: 0px;
     margin-bottom: 20px;
   }
@@ -1118,7 +1124,7 @@ h2:after{
   .page.about .buttons a{
     font-size: 18px;
   }
-  .page.coaches .about_coach h1{
+  .page.about .about_coach h1{
     color: #000;
   }
   .table>tbody>tr>td{
