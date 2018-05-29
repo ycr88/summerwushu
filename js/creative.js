@@ -28,13 +28,23 @@
         }
     })
     // Table id's
+    $(".chooseBtn").on('click',function(){
+        event.preventDefault();        
+       var classToShow = this.id.split('-')[1],
+           filter = classToShow === "all" ? 'div': '.' + classToShow , area ='.'+ $(this).data("area");
+
+       $(area+" .choice."+classToShow).show().addClass('active')
+           .not(filter).hide();
+           console.log($(area+" .choice"+classToShow))
+    }  );
     $(".buttons").on('click','a',function(){
-        event.preventDefault();
+        event.preventDefault();        
        var classToShow = this.id.split('-')[1],
            filter = classToShow === "all" ? 'div': '.' + classToShow;
        $(".table tbody tr td")
            .children().show().addClass('active')
            .not(filter).hide();
+
     });
     $(".buttons").on('click','#choice-all',function(){
         $(".table tbody tr td div").removeClass('active');
