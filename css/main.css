@@ -1,7 +1,18 @@
 /*header*/
 .header{
-	padding-top: 2em;
-    height: 80%;
+	max-height: 80%;
 }
+.header-content-inner{
+ padding-top: 2em;
+}
+
+.program-list{
+	width: 80%;
+	margin: auto;
+}
+.program-list h3{
+	font-size: 1.8rem;
+}
+
 /*header*/
 
